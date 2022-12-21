@@ -1,0 +1,63 @@
+<!Doctype html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <title> Fruit Basket </title>
+        <link rel="stylesheet" href="shopping_cart.css">        
+        <script src='shopping_cart.js'></script>
+        </head>
+<body>
+    <div class="flex-container">
+        <div1>
+            <header>
+            <h2>Apple</h2>
+        </header>
+        <p class="flex-item"> <img src=https://balconygardenweb-lhnfx0beomqvnhspx.netdna-ssl.com/wp-content/uploads/2019/09/Cats-Eat-Apples.jpg>  </p>
+                <footer>
+            <button onclick="addApple()"> Add to Cart </button><br>
+                </footer>
+        </div1>
+    
+        <div2>
+            <header>
+            <h2>Banana</h2>
+        </header>
+        <p class="flex-item"> <img src=https://allaboutcats.com/wp-content/uploads/2020/12/Is-banana-good-for-cats-feature.jpg>  </p>
+                <footer>
+            <button onclick="addBanana()"> Add to Cart </button><br>
+                </footer>
+        </div2>
+
+        <div3>
+            <header>
+            <h2>Kiwi</h2>
+        </header>
+        <p class="flex-item"> <img src=https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/kiwi-cat-jun-xing.jpg>  </p>
+                <footer>
+            <button onclick="addKiwi()"> Add to Cart </button><br>
+                </footer>            
+        </div3>
+        <br>
+
+        <div4 class="basket">
+            <h1>Basket - Total:<a id="displayBasket">0</a> </h1><button onclick="clearBasket()">Clear Basket</button>
+            <br>
+            <p>Apples</p>
+           <p id="displayApple">0</p>
+           <button onclick="addApple()"> + </button><button onclick= "minusApple()"> - </button>       
+
+        <br>
+        <p>Bananas</p>
+<p id="displayBanana">0</p>
+<button onclick="addBanana()"> + </button><button onclick= "minusBanana()"> - </button>
+   
+
+    <br>
+    <p>Kiwis</p>
+    <button onclick="addKiwi()"> + </button><button onclick= "minusKiwi()"> - </button>
+<p id="displayKiwi">0</p>
+</div4>
+
+       
+</body>
+
