@@ -21,8 +21,8 @@ body {
 /* Banner */
 
 .jumbotron {
-  background-image: url('/fruit_banner.jpg');
-/* background-repeat: no-repeat; */
+  background-image: url('fruit_banner.jpg');
+
 min-height: 400px;
 }
 
