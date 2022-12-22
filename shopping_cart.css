@@ -1,17 +1,41 @@
-.flex-container{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    padding: 0;
-    margin:0;
-    list-style-type: none;
 
-}
 
 body {
     font-family: 'Courier New';
-    font-weight: bold;
     
+}
+
+/* nav */
+
+.navbar-brand {
+  margin: 15px;
+  font-weight: bold;
+  font-size: x-large;
+}
+
+.nav-item {
+  margin: 15px;
+  font-weight: bold;
+}
+
+/* Banner */
+
+.jumbotron {
+  background-image: url('/fruit_banner.jpg');
+/* background-repeat: no-repeat; */
+min-height: 400px;
+}
+
+
+/* Fruit */
+
+.flex-container{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  padding: 0;
+  margin:0;
+  list-style-type: none;
 }
 
 .flex-item {
@@ -34,6 +58,9 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
+
+
+/* BASKET */
 
 .basket {
  
