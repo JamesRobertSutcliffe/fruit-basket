@@ -6,22 +6,36 @@ let fruit = {
  Kiwi: 0
 }
 
+let fruitPrice = {
+    Apple: 0,
+    Banana: 0,
+    Kiwi: 0
+   }
+
 
 // below functions add and subtract fruit totals and push this to the object // 
 
 function addApple(){
     let applePlus = fruit.Apple + 1;
+    let applePricePlus = fruitPrice.Apple + 1.50;
     if (fruit.Apple >= 0){
-    fruit.Apple = applePlus;}
+    fruit.Apple = applePlus;};
+    if (fruitPrice.Apple >= 0){
+        fruitPrice.Apple = applePricePlus};
     document.getElementById('displayApple').innerHTML = fruit.Apple;
+    console.log(fruitPrice);
     total();
     }
 
 function minusApple(){
     let appleMinus = fruit.Apple - 1;
+    let applePriceMinus = fruitPrice.Apple - 1.50;
     if (fruit.Apple > 0){
-    fruit.Apple = appleMinus;}    
+    fruit.Apple = appleMinus};
+    if (fruitPrice.Apple > 0){
+        fruitPrice.Apple = applePriceMinus};    
     document.getElementById('displayApple').innerHTML = fruit.Apple;
+    console.log(fruitPrice);
     total();
     }
 
@@ -75,10 +89,24 @@ function clearBasket(){
     for (let x in fruit){
         fruit[x] = 0;
     }
+     total();
+    minusKiwi();
+    minusApple();
+    minusBanana();
+}
+
+// find way to run clear total function -- event listener?
+
+function clearTotal(){
+    for (let i in fruitPrice){
+        fruitPrice[i] = 0;
+    }
     total();
     minusKiwi();
     minusApple();
     minusBanana();
 }
+
+
 
 

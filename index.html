@@ -4,10 +4,10 @@
         <meta charset='utf-8'>
         <title> Fruit Basket </title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <link rel="stylesheet" href="shopping_cart.css">        
-        <script src='shopping_cart.js'></script>
+        <link rel="stylesheet" href="assets/shopping_cart.css">        
+        <script src='assets/shopping_cart.js'></script>
         </head>
-        <body>
+        <body bg-light>
         <!-- NAV -->
 
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -40,37 +40,51 @@
 
   <!-- Fruit shop -->
 
-    <div class="flex-container">
-        <div1>
-            <header>
-            <h2>Apple</h2>
-        </header>
-        <p class="flex-item"> <img src=https://balconygardenweb-lhnfx0beomqvnhspx.netdna-ssl.com/wp-content/uploads/2019/09/Cats-Eat-Apples.jpg>  </p>
-                <footer>
-            <button onclick="addApple()"> Add to Cart </button><br>
-                </footer>
-        </div1>
-    
-        <div2>
-            <header>
-            <h2>Banana</h2>
-        </header>
-        <p class="flex-item"> <img src=https://allaboutcats.com/wp-content/uploads/2020/12/Is-banana-good-for-cats-feature.jpg>  </p>
-                <footer>
-            <button onclick="addBanana()"> Add to Cart </button><br>
-                </footer>
-        </div2>
+  <div class="container">
+  <h1 class="fruit-header">Fruit</h1>
+  </div>
 
-        <div3>
-            <header>
-            <h2>Kiwi</h2>
-        </header>
-        <p class="flex-item"> <img src=https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/kiwi-cat-jun-xing.jpg>  </p>
-                <footer>
-            <button onclick="addKiwi()"> Add to Cart </button><br>
-                </footer>            
-        </div3>
-        <br>
+  <div class="container">
+    
+    <div class="row">
+ 
+    <div class="col-lg-4 col-md-4 col-sm-12">
+      <div class="card" style="width: 18rem; height: 100%;">
+      <img src="assets/images/apple.jpg" class="card-img-top" alt="Apple">
+      <div class="card-body">
+        <h1>Apple</h1>
+        <p class="card-text">£1.5</p>
+        <button onclick="addApple()"> Add to Cart </button><br>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-lg-4 col-md-4 col-sm-12">
+    <div class="card" style="width: 18rem; height: 100%;">
+      <img src="assets/images/banana.jpg" class="card-img-top" alt="Banana">
+      <div class="card-body">
+        <h1>Banana</h1>
+        <p class="card-text">£0.99</p>
+        <button onclick="addBanana()"> Add to Cart </button>
+      </div>
+    </div>
+  </div>
+
+    <div class="col-lg-4 col-md-4 col-sm-12">
+    <div class="card" style="width: 18rem; height: 100%;">
+      <img src="assets/images/kiwi.png" class="card-img-top" alt="Kiwi">
+      <div class="card-body">
+        <h1>Kiwi</h1>
+        <p class="card-text">£1</p>
+        <button onclick="addKiwi()"> Add to Cart </button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+<!-- BASKET -->
 
         <div4 class="basket">
             <h1>Basket - Total:<a id="displayBasket">0</a> </h1><button onclick="clearBasket()">Clear Basket</button>
