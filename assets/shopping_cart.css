@@ -21,7 +21,7 @@ body {
 /* Banner */
 
 .jumbotron {
-background-image: url('/assets/images/fruit_banner.jpg');
+background-image: url('assets/images/fruit_banner.jpg');
 
 min-height: 400px;
 margin-bottom: 15px;
