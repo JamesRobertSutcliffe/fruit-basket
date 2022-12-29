@@ -4,13 +4,11 @@ To do:
 
 HTML / CSS
 
-Create basket aligned with other titles in margin.
+Create basket for remaining fruit / add visibility class
 Initially set to basket is empty - return to this when basket is cleared
-work out how to be best display item name / quantity and price with total and remove buttons - use grid?s
-have small image of product pop up in basket when added
-
 
 JS
 
-Complete logic for adding and minusing price of products
-USE dom / create HTML attribute (and look into CSS dom for styling) / show hide images and add up / display totals / 
+Complete logic for adding and minusing price of products - apple complete / copy this for other fruit
+toggle visibility on for each basket only when product is in basket / otherwise show empty basket message
+ensure all totals are correct / total price at bottow / when individual items are removed this should be reflected in total price 

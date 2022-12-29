@@ -78,7 +78,7 @@ function addBanana(){
 // put this function at end of all other functions
 
 function total(){
-const fruitArray = Object.values(fruit);
+const fruitArray = Object.values(fruitPrice);
     let total = 0;
 for (let x in fruitArray){
     total += +fruitArray[x];
@@ -95,8 +95,11 @@ function clearBasket(){
     minusKiwi();
     minusApple();
     minusBanana();
+    clearApple()
     clearTotal();
 }
+
+// find way to run clear total function -- event listener?
 
 function clearTotal(){
     for (let i in fruitPrice){
@@ -106,6 +109,14 @@ function clearTotal(){
     minusKiwi();
     minusApple();
     minusBanana();
+}
+
+function clearApple(){
+    fruitPrice.Apple = 0;
+    fruit.Apple = 0;
+    document.getElementById('displayApplePrice').innerHTML = "£" + fruitPrice.Apple;
+    document.getElementById('displayApple').innerHTML = fruit.Apple;
+    total()
 }
 
 
