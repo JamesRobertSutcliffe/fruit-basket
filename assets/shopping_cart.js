@@ -23,6 +23,7 @@ function addApple(){
     if (fruitPrice.Apple >= 0){
         fruitPrice.Apple = applePricePlus};
     document.getElementById('displayApple').innerHTML = fruit.Apple;
+    document.getElementById('displayApplePrice').innerHTML = "£" + fruitPrice.Apple;
     console.log(fruitPrice);
     total();
     }
@@ -35,6 +36,7 @@ function minusApple(){
     if (fruitPrice.Apple > 0){
         fruitPrice.Apple = applePriceMinus};    
     document.getElementById('displayApple').innerHTML = fruit.Apple;
+    document.getElementById('displayApplePrice').innerHTML = "£" + fruitPrice.Apple;
     console.log(fruitPrice);
     total();
     }
@@ -93,9 +95,8 @@ function clearBasket(){
     minusKiwi();
     minusApple();
     minusBanana();
+    clearTotal();
 }
-
-// find way to run clear total function -- event listener?
 
 function clearTotal(){
     for (let i in fruitPrice){
