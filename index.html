@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="assets/shopping_cart.css">        
         <script src='assets/shopping_cart.js'></script>
         </head>
-        <body bg-light>
+        <body class="bg-light">
         <!-- NAV -->
 
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -45,9 +45,7 @@
   </div>
 
   <div class="container">
-    
     <div class="row">
- 
     <div class="col-lg-4 col-md-4 col-sm-12">
       <div class="card" style="width: 18rem; height: 100%;">
       <img src="assets/images/apple.jpg" class="card-img-top" alt="Apple">
@@ -92,7 +90,7 @@
 
 <!-- APPLE -->
 
-  <div class="container">
+  <div class="container rounded bg-white">
     <div class="row d-flex justify-content-between align-items-center">
       <div class="col-lg-4 col-md-4 col-sm-12">
         <img src="assets/images/apple.jpg" style="height: 80px;" alt="Apple">
@@ -112,14 +110,14 @@
         <h4 id="displayApplePrice"> £0 </h4>
       </div> 
       <div class="col-lg-2 col-md-2 col-sm-12">
-        <button type="button" class="btn btn-danger" onclick= "clearApple()">Remove</button>
+        <button type="button" class="btn btn-secondary" onclick= "clearApple()">x</button>
       </div>
     </div>
   </div>
 
   <!-- BANANA -->
 
-  <div class="container">
+  <div class="container rounded bg-white">
     <div class="row d-flex justify-content-between align-items-center">
       <div class="col-lg-4 col-md-4 col-sm-12">
         <img src="assets/images/banana.jpg" style="height: 80px;" alt="Apple">
@@ -139,14 +137,14 @@
         <h4 id="displayBananaPrice"> £0 </h4>
       </div> 
       <div class="col-lg-2 col-md-2 col-sm-12">
-        <button type="button" class="btn btn-danger" onclick= "clearBanana()">Remove</button>
+        <button type="button" class="btn btn-secondary" onclick= "clearBanana()">x</button>
       </div>
     </div>
   </div>
 
   <!-- KIWI -->
 
-  <div class="container">
+  <div class="container rounded bg-white">
     <div class="row d-flex justify-content-between align-items-center">
       <div class="col-lg-4 col-md-4 col-sm-12">
         <img src="assets/images/kiwi.png" style="height: 80px;" alt="Apple">
@@ -166,17 +164,33 @@
         <h4 id="displayKiwiPrice"> £0 </h4>
       </div> 
       <div class="col-lg-2 col-md-2 col-sm-12">
-        <button type="button" class="btn btn-danger" onclick= "clearKiwi()">Remove</button>
+        <button type="button" class="btn btn-secondary" onclick= "clearKiwi()">x</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Total -->
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-11 col-md-11 col-sm-11">
+        <div class="d-flex align-items-center total-style">
+        <h4>Total</h4>
+        <div class="ml-auto d-flex align-items-center justify-content-end total-style">
+<h4 id="displayBasket">£0.00</h4>
+<button onclick="clearBasket()" class="btn btn-danger">Clear Basket</button>
+</div>
+</div>
       </div>
     </div>
   </div>
 
 
 
-        <div4 class="basket">
+        <!-- <div4 class="basket">
             <h1>Basket - Total:<a id="displayBasket">0</a> </h1><button onclick="clearBasket()">Clear Basket</button>
                     
-</div4>
+</div4> -->
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>

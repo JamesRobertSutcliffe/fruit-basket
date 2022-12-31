@@ -44,7 +44,6 @@ function minusApple(){
 function addBanana(){
     let bananaPlus = fruit.Banana + 1;
     let bananaPricePlus = fruitPrice.Banana + 0.99;
-    // let bananaPriceFixed = fruitPrice.Banana
     if (fruit.Banana >= 0){
     fruit.Banana = bananaPlus};
     if (fruitPrice.Banana >= 0){
@@ -98,7 +97,7 @@ const fruitArray = Object.values(fruitPrice);
     let total = 0;
 for (let x in fruitArray){
     total += fruitArray[x];
-    document.getElementById('displayBasket').innerHTML = total.toFixed(2);
+    document.getElementById('displayBasket').innerHTML = "£" + total.toFixed(2);
 }
 }
 

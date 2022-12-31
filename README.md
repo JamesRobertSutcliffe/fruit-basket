@@ -4,9 +4,10 @@ To do:
 
 HTML / CSS
 
-stylise baskey - rounded edges and padding / move to modal or new area on click? 
+sort padding - get cards to sit in centre of gridspace?
+stylise basket - rounded edges and padding / sort padding (see above) ---- move to modal or new area on click?!?!
 resize images - all to the size of kiwi
-Add total section to basket - stylise
+
 
 JS
 
