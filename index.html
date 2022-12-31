@@ -90,10 +90,12 @@
   <h1 class="fruit-header">Basket</h1>
   </div>
 
+<!-- APPLE -->
+
   <div class="container">
     <div class="row d-flex justify-content-between align-items-center">
       <div class="col-lg-4 col-md-4 col-sm-12">
-        <img src="assets/images/apple.jpg" style="height: 100px;" alt="Apple">
+        <img src="assets/images/apple.jpg" style="height: 80px;" alt="Apple">
       </div>
       <div class="col-lg-2 col-md-2 col-sm-12">
         <h4>Apple</h4>
@@ -115,25 +117,65 @@
     </div>
   </div>
 
+  <!-- BANANA -->
+
+  <div class="container">
+    <div class="row d-flex justify-content-between align-items-center">
+      <div class="col-lg-4 col-md-4 col-sm-12">
+        <img src="assets/images/banana.jpg" style="height: 80px;" alt="Apple">
+      </div>
+      <div class="col-lg-2 col-md-2 col-sm-12">
+        <h4>Banana</h4>
+      </div> 
+      
+      <div class="col-lg-2 col-md-2 col-sm-12">
+        <div class="row d-flex justify-content-center">
+        <button onclick="addBanana()" type="button" class="btn btn-light btn-sm"> + </button>
+        <h4 id="displayBanana"> 0 </h4>
+        <button onclick= "minusBanana()" type="button" class="btn btn-light btn-sm"> - </button>
+      </div>
+      </div> 
+      <div class="col-lg-2 col-md-2 col-sm-12">
+        <h4 id="displayBananaPrice"> £0 </h4>
+      </div> 
+      <div class="col-lg-2 col-md-2 col-sm-12">
+        <button type="button" class="btn btn-danger" onclick= "clearBanana()">Remove</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- KIWI -->
+
+  <div class="container">
+    <div class="row d-flex justify-content-between align-items-center">
+      <div class="col-lg-4 col-md-4 col-sm-12">
+        <img src="assets/images/kiwi.png" style="height: 80px;" alt="Apple">
+      </div>
+      <div class="col-lg-2 col-md-2 col-sm-12">
+        <h4>Kiwi</h4>
+      </div> 
+      
+      <div class="col-lg-2 col-md-2 col-sm-12">
+        <div class="row d-flex justify-content-center">
+        <button onclick="addKiwi()" type="button" class="btn btn-light btn-sm"> + </button>
+        <h4 id="displayKiwi"> 0 </h4>
+        <button onclick= "minusKiwi()" type="button" class="btn btn-light btn-sm"> - </button>
+      </div>
+      </div> 
+      <div class="col-lg-2 col-md-2 col-sm-12">
+        <h4 id="displayKiwiPrice"> £0 </h4>
+      </div> 
+      <div class="col-lg-2 col-md-2 col-sm-12">
+        <button type="button" class="btn btn-danger" onclick= "clearKiwi()">Remove</button>
+      </div>
+    </div>
+  </div>
+
 
 
         <div4 class="basket">
             <h1>Basket - Total:<a id="displayBasket">0</a> </h1><button onclick="clearBasket()">Clear Basket</button>
-            <br>
-            <p>Apples</p>
-           <p id="displayApple">0</p>
-           <button onclick="addApple()"> + </button><button onclick= "minusApple()"> - </button>       
-
-        <br>
-        <p>Bananas</p>
-<p id="displayBanana">0</p>
-<button onclick="addBanana()"> + </button><button onclick= "minusBanana()"> - </button>
-   
-
-    <br>
-    <p>Kiwis</p>
-    <button onclick="addKiwi()"> + </button><button onclick= "minusKiwi()"> - </button>
-<p id="displayKiwi">0</p>
+                    
 </div4>
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

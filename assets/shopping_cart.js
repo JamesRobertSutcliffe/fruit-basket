@@ -1,5 +1,7 @@
 
 
+// DATA STORE
+
 let fruit = {
  Apple: 0,
  Banana: 0,
@@ -13,7 +15,7 @@ let fruitPrice = {
    }
 
 
-// below functions add and subtract fruit totals and push this to the object // 
+// Define number of fruit in each basket // 
 
 function addApple(){
     let applePlus = fruit.Apple + 1;
@@ -23,8 +25,7 @@ function addApple(){
     if (fruitPrice.Apple >= 0){
         fruitPrice.Apple = applePricePlus};
     document.getElementById('displayApple').innerHTML = fruit.Apple;
-    document.getElementById('displayApplePrice').innerHTML = "£" + fruitPrice.Apple;
-    console.log(fruitPrice);
+    document.getElementById('displayApplePrice').innerHTML = "£" + fruitPrice.Apple.toFixed(2);
     total();
     }
 
@@ -36,79 +37,78 @@ function minusApple(){
     if (fruitPrice.Apple > 0){
         fruitPrice.Apple = applePriceMinus};    
     document.getElementById('displayApple').innerHTML = fruit.Apple;
-    document.getElementById('displayApplePrice').innerHTML = "£" + fruitPrice.Apple;
-    console.log(fruitPrice);
+    document.getElementById('displayApplePrice').innerHTML = "£" + fruitPrice.Apple.toFixed(2);
     total();
     }
 
 function addBanana(){
     let bananaPlus = fruit.Banana + 1;
+    let bananaPricePlus = fruitPrice.Banana + 0.99;
+    // let bananaPriceFixed = fruitPrice.Banana
     if (fruit.Banana >= 0){
-    fruit.Banana = bananaPlus;}
+    fruit.Banana = bananaPlus};
+    if (fruitPrice.Banana >= 0){
+        fruitPrice.Banana = bananaPricePlus};
     document.getElementById('displayBanana').innerHTML = fruit.Banana;
+    document.getElementById('displayBananaPrice').innerHTML = "£" + fruitPrice.Banana.toFixed(2);
     total();
     }
         
     function minusBanana(){
     let bananaMinus = fruit.Banana - 1;
+    let bananaPriceMinus = fruitPrice.Banana - 0.99;
     if (fruit.Banana > 0){
-    fruit.Banana = bananaMinus;}    
+    fruit.Banana = bananaMinus}; 
+    if (fruitPrice.Banana > 0){
+        fruitPrice.Banana = bananaPriceMinus};    
     document.getElementById('displayBanana').innerHTML = fruit.Banana;
+    document.getElementById('displayBananaPrice').innerHTML = "£" + fruitPrice.Banana.toFixed(2);
     total();
     }
 
     function addKiwi(){
     let kiwiPlus = fruit.Kiwi + 1;
+    let kiwiPricePlus = fruitPrice.Kiwi + 1;
     if (fruit.Kiwi >= 0){
-    fruit.Kiwi = kiwiPlus;}
+    fruit.Kiwi = kiwiPlus};
+    if (fruitPrice.Kiwi >= 0){
+        fruitPrice.Kiwi = kiwiPricePlus};
     document.getElementById('displayKiwi').innerHTML = fruit.Kiwi;
+    document.getElementById('displayKiwiPrice').innerHTML = "£" + fruitPrice.Kiwi.toFixed(2);
     total();
     }
             
     function minusKiwi(){
     let kiwiMinus = fruit.Kiwi - 1;
+    let kiwiPriceMinus = fruitPrice.Kiwi - 1;
     if (fruit.Kiwi > 0){
-    fruit.Kiwi = kiwiMinus;}    
+    fruit.Kiwi = kiwiMinus};
+    if (fruitPrice.Kiwi > 0){
+        fruitPrice.Kiwi = kiwiPriceMinus};      
     document.getElementById('displayKiwi').innerHTML = fruit.Kiwi;
+    document.getElementById('displayKiwiPrice').innerHTML = "£" + fruitPrice.Kiwi.toFixed(2);
     total();
     }
         
 
-/// create function that loops through the object - and gets the sum of all properties - push this to total - 
-// put this function at end of all other functions
+/// Creates total price
 
 function total(){
 const fruitArray = Object.values(fruitPrice);
     let total = 0;
 for (let x in fruitArray){
-    total += +fruitArray[x];
-    document.getElementById('displayBasket').innerHTML = total;
+    total += fruitArray[x];
+    document.getElementById('displayBasket').innerHTML = total.toFixed(2);
 }
 }
-// create function for clear basket that resets the value of the object to 0 
+
+// Clear functions
 
 function clearBasket(){
-    for (let x in fruit){
-        fruit[x] = 0;
-    }
-     total();
-    minusKiwi();
-    minusApple();
-    minusBanana();
     clearApple()
+    clearBanana()
+    clearKiwi()
     clearTotal();
-}
-
-// find way to run clear total function -- event listener?
-
-function clearTotal(){
-    for (let i in fruitPrice){
-        fruitPrice[i] = 0;
-    }
-    total();
-    minusKiwi();
-    minusApple();
-    minusBanana();
 }
 
 function clearApple(){
@@ -116,6 +116,22 @@ function clearApple(){
     fruit.Apple = 0;
     document.getElementById('displayApplePrice').innerHTML = "£" + fruitPrice.Apple;
     document.getElementById('displayApple').innerHTML = fruit.Apple;
+    total()
+}
+
+function clearBanana(){
+    fruitPrice.Banana = 0;
+    fruit.Banana = 0;
+    document.getElementById('displayBananaPrice').innerHTML = "£" + fruitPrice.Banana;
+    document.getElementById('displayBanana').innerHTML = fruit.Banana;
+    total()
+}
+
+function clearKiwi(){
+    fruitPrice.Kiwi = 0;
+    fruit.Kiwi = 0;
+    document.getElementById('displayKiwiPrice').innerHTML = "£" + fruitPrice.Kiwi;
+    document.getElementById('displayKiwi').innerHTML = fruit.Kiwi;
     total()
 }
 
