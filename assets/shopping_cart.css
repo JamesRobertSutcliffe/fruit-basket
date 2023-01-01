@@ -75,11 +75,11 @@ margin-bottom: 15px;
   margin-bottom: 10px;
 }
 
-#basket-section {
+.basket-section {
   display: none;
 }
 
-#empty {
+.empty {
   display: block;
 }
 
@@ -87,6 +87,4 @@ margin-bottom: 15px;
   display: none;
 }
 
-.hide {
-  display: none;
-}
+

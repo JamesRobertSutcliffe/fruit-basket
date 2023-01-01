@@ -27,6 +27,7 @@ function addApple(){
     document.getElementById('displayApple').innerHTML = fruit.Apple;
     document.getElementById('displayApplePrice').innerHTML = "£" + fruitPrice.Apple.toFixed(2);
     total();
+    toggleApple();
     }
 
 function minusApple(){
@@ -39,6 +40,7 @@ function minusApple(){
     document.getElementById('displayApple').innerHTML = fruit.Apple;
     document.getElementById('displayApplePrice').innerHTML = "£" + fruitPrice.Apple.toFixed(2);
     total();
+    toggleApple();
     }
 
 function addBanana(){
@@ -63,6 +65,7 @@ function addBanana(){
     document.getElementById('displayBanana').innerHTML = fruit.Banana;
     document.getElementById('displayBananaPrice').innerHTML = "£" + fruitPrice.Banana.toFixed(2);
     total();
+    toggle();
     }
 
     function addKiwi(){
@@ -75,6 +78,7 @@ function addBanana(){
     document.getElementById('displayKiwi').innerHTML = fruit.Kiwi;
     document.getElementById('displayKiwiPrice').innerHTML = "£" + fruitPrice.Kiwi.toFixed(2);
     total();
+    toggle();
     }
             
     function minusKiwi(){
@@ -87,6 +91,7 @@ function addBanana(){
     document.getElementById('displayKiwi').innerHTML = fruit.Kiwi;
     document.getElementById('displayKiwiPrice').innerHTML = "£" + fruitPrice.Kiwi.toFixed(2);
     total();
+    toggle();
     }
         
 
@@ -116,6 +121,7 @@ function clearApple(){
     document.getElementById('displayApplePrice').innerHTML = "£" + fruitPrice.Apple;
     document.getElementById('displayApple').innerHTML = fruit.Apple;
     total()
+    toggleApple()
 }
 
 function clearBanana(){
@@ -134,6 +140,14 @@ function clearKiwi(){
     total()
 }
 
+// toggle baskets visibility
 
+function toggleApple() {
+const appleBasket = document.getElementById('apple-basket');
+        if (fruitPrice.Apple > 0) {
+ appleBasket.classList.remove('hide');
+        } else {
+            appleBasket.classList.add('hide');
+}};
 
 
