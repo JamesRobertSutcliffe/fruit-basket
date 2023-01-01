@@ -21,7 +21,7 @@
                   <a class="nav-link" href="#">Fruit</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Basket</a>
+                    <a class="nav-link" href="#">Basket <img src="assets/images/basket.png" class="card-img-top" alt="basket" style="height: 20px; width: 20px;"> </a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="#">About this page</a>
@@ -46,7 +46,7 @@
 
   <div class="container">
     <div class="row">
-    <div class="col-lg-4 col-md-4 col-sm-12">
+    <div class="col-lg-4 col-md-4 col-sm-12 d-flex justify-content-start">
       <div class="card" style="width: 18rem; height: 100%;">
       <img src="assets/images/apple.jpg" class="card-img-top" alt="Apple">
       <div class="card-body">
@@ -57,7 +57,7 @@
     </div>
   </div>
 
-  <div class="col-lg-4 col-md-4 col-sm-12">
+  <div class="col-lg-4 col-md-4 col-sm-12 d-flex justify-content-center">
     <div class="card" style="width: 18rem; height: 100%;">
       <img src="assets/images/banana.jpg" class="card-img-top" alt="Banana">
       <div class="card-body">
@@ -68,7 +68,7 @@
     </div>
   </div>
 
-    <div class="col-lg-4 col-md-4 col-sm-12">
+    <div class="col-lg-4 col-md-4 col-sm-12 d-flex justify-content-end">
     <div class="card" style="width: 18rem; height: 100%;">
       <img src="assets/images/kiwi.png" class="card-img-top" alt="Kiwi">
       <div class="card-body">
@@ -88,10 +88,14 @@
   <h1 class="fruit-header">Basket</h1>
   </div>
 
+  
+
+
 <!-- APPLE -->
 
-  <div class="container rounded bg-white">
-    <div class="row d-flex justify-content-between align-items-center">
+<div class="basket-section">
+  <div class="container rounded bg-white basket">
+    <div class="row d-flex align-items-center">
       <div class="col-lg-4 col-md-4 col-sm-12">
         <img src="assets/images/apple.jpg" style="height: 80px;" alt="Apple">
       </div>
@@ -106,10 +110,10 @@
         <button onclick= "minusApple()" type="button" class="btn btn-light btn-sm"> - </button>
       </div>
       </div> 
-      <div class="col-lg-2 col-md-2 col-sm-12">
+      <div class="col-lg-2 col-md-2 col-sm-12 d-flex justify-content-center">
         <h4 id="displayApplePrice"> £0 </h4>
       </div> 
-      <div class="col-lg-2 col-md-2 col-sm-12">
+      <div class="col-lg-2 col-md-2 col-sm-12 d-flex justify-content-end">
         <button type="button" class="btn btn-secondary" onclick= "clearApple()">x</button>
       </div>
     </div>
@@ -117,8 +121,8 @@
 
   <!-- BANANA -->
 
-  <div class="container rounded bg-white">
-    <div class="row d-flex justify-content-between align-items-center">
+  <div class="container rounded bg-white basket">
+    <div class="row d-flex align-items-center">
       <div class="col-lg-4 col-md-4 col-sm-12">
         <img src="assets/images/banana.jpg" style="height: 80px;" alt="Apple">
       </div>
@@ -133,10 +137,10 @@
         <button onclick= "minusBanana()" type="button" class="btn btn-light btn-sm"> - </button>
       </div>
       </div> 
-      <div class="col-lg-2 col-md-2 col-sm-12">
+      <div class="col-lg-2 col-md-2 col-sm-12 d-flex justify-content-center">
         <h4 id="displayBananaPrice"> £0 </h4>
       </div> 
-      <div class="col-lg-2 col-md-2 col-sm-12">
+      <div class="col-lg-2 col-md-2 col-sm-12 d-flex justify-content-end">
         <button type="button" class="btn btn-secondary" onclick= "clearBanana()">x</button>
       </div>
     </div>
@@ -144,8 +148,8 @@
 
   <!-- KIWI -->
 
-  <div class="container rounded bg-white">
-    <div class="row d-flex justify-content-between align-items-center">
+  <div class="container rounded bg-white basket">
+    <div class="row d-flex align-items-center">
       <div class="col-lg-4 col-md-4 col-sm-12">
         <img src="assets/images/kiwi.png" style="height: 80px;" alt="Apple">
       </div>
@@ -160,37 +164,42 @@
         <button onclick= "minusKiwi()" type="button" class="btn btn-light btn-sm"> - </button>
       </div>
       </div> 
-      <div class="col-lg-2 col-md-2 col-sm-12">
+      <div class="col-lg-2 col-md-2 col-sm-12 d-flex justify-content-center">
         <h4 id="displayKiwiPrice"> £0 </h4>
       </div> 
-      <div class="col-lg-2 col-md-2 col-sm-12">
+      <div class="col-lg-2 col-md-2 col-sm-12 d-flex justify-content-end">
         <button type="button" class="btn btn-secondary" onclick= "clearKiwi()">x</button>
       </div>
     </div>
   </div>
+</div>
 
-  <!-- Total -->
+<!-- EMPTY -->
 
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-11 col-md-11 col-sm-11">
-        <div class="d-flex align-items-center total-style">
-        <h4>Total</h4>
-        <div class="ml-auto d-flex align-items-center justify-content-end total-style">
+<div class="container rounded bg-white basket empty">
+  <div class="row d-flex align-items-center">
+       <div class="col-lg-12 col-md-12 col-sm-12 d-flex align-items-center justify-content-center">
+      <h4>Your Basket is Empty <img src="assets/images/basket.png" class="card-img-top" alt="basket" style="height: 30px; width: 30px;"> </h4>
+    </div> 
+  </div>
+</div>
+
+
+ <!-- Total -->
+
+ <div class="container">
+  <div class="row">
+    <div class="col-lg-12 col-md-12 col-sm-12">
+      <div class="d-flex align-items-center total-style">
+      <h4>Total</h4>
+      <div class="ml-auto d-flex align-items-center justify-content-end total-style">
 <h4 id="displayBasket">£0.00</h4>
 <button onclick="clearBasket()" class="btn btn-danger">Clear Basket</button>
 </div>
 </div>
-      </div>
     </div>
   </div>
-
-
-
-        <!-- <div4 class="basket">
-            <h1>Basket - Total:<a id="displayBasket">0</a> </h1><button onclick="clearBasket()">Clear Basket</button>
-                    
-</div4> -->
+</div>
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
