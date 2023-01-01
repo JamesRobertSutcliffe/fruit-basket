@@ -27,7 +27,7 @@ function addApple(){
     document.getElementById('displayApple').innerHTML = fruit.Apple;
     document.getElementById('displayApplePrice').innerHTML = "£" + fruitPrice.Apple.toFixed(2);
     total();
-    toggleApple();
+    toggle();
     }
 
 function minusApple(){
@@ -40,7 +40,7 @@ function minusApple(){
     document.getElementById('displayApple').innerHTML = fruit.Apple;
     document.getElementById('displayApplePrice').innerHTML = "£" + fruitPrice.Apple.toFixed(2);
     total();
-    toggleApple();
+    toggle();
     }
 
 function addBanana(){
@@ -53,6 +53,7 @@ function addBanana(){
     document.getElementById('displayBanana').innerHTML = fruit.Banana;
     document.getElementById('displayBananaPrice').innerHTML = "£" + fruitPrice.Banana.toFixed(2);
     total();
+    toggle();
     }
         
     function minusBanana(){
@@ -112,7 +113,8 @@ function clearBasket(){
     clearApple()
     clearBanana()
     clearKiwi()
-    clearTotal();
+    clearTotal()
+    toggle();
 }
 
 function clearApple(){
@@ -121,7 +123,7 @@ function clearApple(){
     document.getElementById('displayApplePrice').innerHTML = "£" + fruitPrice.Apple;
     document.getElementById('displayApple').innerHTML = fruit.Apple;
     total()
-    toggleApple()
+    toggle()
 }
 
 function clearBanana(){
@@ -129,7 +131,8 @@ function clearBanana(){
     fruit.Banana = 0;
     document.getElementById('displayBananaPrice').innerHTML = "£" + fruitPrice.Banana;
     document.getElementById('displayBanana').innerHTML = fruit.Banana;
-    total()
+    total();
+    toggle();
 }
 
 function clearKiwi(){
@@ -144,10 +147,36 @@ function clearKiwi(){
 
 function toggleApple() {
 const appleBasket = document.getElementById('apple-basket');
-        if (fruitPrice.Apple > 0) {
+    if (fruitPrice.Apple > 0) {
  appleBasket.classList.remove('hide');
         } else {
             appleBasket.classList.add('hide');
 }};
 
+function toggleBanana() {
+    const bananaBasket = document.getElementById('banana-basket');
+      if (fruitPrice.Banana > 0) {
+     bananaBasket.classList.remove('hide');
+            } else {
+    bananaBasket.classList.add('hide');
+    }};
 
+    function toggleKiwi() {
+        const kiwiBasket = document.getElementById('kiwi-basket');
+          if (fruitPrice.Kiwi > 0) {
+        kiwiBasket.classList.remove('hide');
+                } else {
+        kiwiBasket.classList.add('hide');
+        }};
+
+
+    // toggleEmpty(){
+    //     const emptyBasket = document.getElementById('empty');
+    // }
+
+function toggle(){
+    toggleApple()
+    toggleBanana()
+    toggleKiwi()
+    toggleEmpty();
+}
