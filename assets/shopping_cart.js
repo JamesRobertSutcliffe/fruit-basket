@@ -113,7 +113,6 @@ function clearBasket(){
     clearApple()
     clearBanana()
     clearKiwi()
-    clearTotal()
     toggle();
 }
 
@@ -123,7 +122,7 @@ function clearApple(){
     document.getElementById('displayApplePrice').innerHTML = "£" + fruitPrice.Apple;
     document.getElementById('displayApple').innerHTML = fruit.Apple;
     total()
-    toggle()
+    toggle();
 }
 
 function clearBanana(){
@@ -131,7 +130,7 @@ function clearBanana(){
     fruit.Banana = 0;
     document.getElementById('displayBananaPrice').innerHTML = "£" + fruitPrice.Banana;
     document.getElementById('displayBanana').innerHTML = fruit.Banana;
-    total();
+    total()
     toggle();
 }
 
@@ -141,6 +140,7 @@ function clearKiwi(){
     document.getElementById('displayKiwiPrice').innerHTML = "£" + fruitPrice.Kiwi;
     document.getElementById('displayKiwi').innerHTML = fruit.Kiwi;
     total()
+    toggle();
 }
 
 // toggle baskets visibility
@@ -170,9 +170,13 @@ function toggleBanana() {
         }};
 
 
-    // toggleEmpty(){
-    //     const emptyBasket = document.getElementById('empty');
-    // }
+
+        // fix this
+
+   function toggleEmpty(){
+    if (fruitPrice.Apple < 0.01) {
+console.log('sucess?');
+    }};
 
 function toggle(){
     toggleApple()
@@ -180,3 +184,5 @@ function toggle(){
     toggleKiwi()
     toggleEmpty();
 }
+
+console.log(fruitPrice)
