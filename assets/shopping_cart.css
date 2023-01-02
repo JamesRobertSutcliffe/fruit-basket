@@ -5,6 +5,10 @@ body {
     
 }
 
+h4 {
+  margin-bottom: 0px;
+}
+
 /* nav */
 
 .navbar-brand {
@@ -78,6 +82,11 @@ margin-bottom: 15px;
 .hide {
   display: none;
 }
+
+.payment button {
+  margin-right: 26px;
+}
+
 
 
 

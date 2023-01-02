@@ -4,13 +4,9 @@ To do:
 
 HTML / CSS
 
-Change fruit cards to image carousel?
+-Change fruit cards to image carousel?
+-resize images - all to the size of kiwi
+-add modal linking to proceed to payment button / within modal add basket plus 'register to puschase' then popout thanking user
+- add linnk to purchase in nav bar displaying same modal
 
-basket ---- move to modal or new area on click?!?!
-resize images - all to the size of kiwi
 
-JS
-
-Moving on....
-
-Add detail and pay section???
