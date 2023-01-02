@@ -174,9 +174,17 @@ function toggleBanana() {
         // fix this
 
    function toggleEmpty(){
-    if (fruitPrice.Apple < 0.01) {
-console.log('sucess?');
-    }};
+    const emptyBasket = document.getElementById('empty');
+    const fruitArray = Object.values(fruitPrice);
+    let total = 0;
+for (let x = 0; x < fruitArray.length; x++){
+    total += fruitArray[x];
+if (total > 0) {
+    emptyBasket.classList.add('hide');
+    } else {
+        emptyBasket.classList.remove('hide');
+    }
+}};
 
 function toggle(){
     toggleApple()
@@ -185,4 +193,4 @@ function toggle(){
     toggleEmpty();
 }
 
-console.log(fruitPrice)
+
