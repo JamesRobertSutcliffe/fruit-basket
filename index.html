@@ -18,10 +18,10 @@
                       <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Fruit</a>
+                  <a class="nav-link" href="#fruit">Fruit</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Basket <img src="assets/images/basket.png" class="card-img-top" alt="basket" style="height: 20px; width: 20px;"> </a>
+                    <a class="nav-link" href="#basket">Basket <img src="assets/images/basket.png" class="card-img-top" alt="basket" style="height: 20px; width: 20px;"> </a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="#">About this page</a>
@@ -41,7 +41,7 @@
   <!-- Fruit shop -->
 
   <div class="container">
-  <h1 class="fruit-header">Fruit</h1>
+  <h1 class="fruit-header" id="fruit">Fruit</h1>
   </div>
 
   <div class="container">
@@ -52,7 +52,9 @@
       <div class="card-body">
         <h1>Apple</h1>
         <p class="card-text">£1.5</p>
+        <a class="nav-link" href="#basket">
         <button onclick="addApple()"> Add to Cart </button><br>
+        </a>
       </div>
     </div>
   </div>
@@ -63,7 +65,9 @@
       <div class="card-body">
         <h1>Banana</h1>
         <p class="card-text">£0.99</p>
+        <a class="nav-link" href="#basket">
         <button onclick="addBanana()"> Add to Cart </button>
+      </a>
       </div>
     </div>
   </div>
@@ -74,7 +78,9 @@
       <div class="card-body">
         <h1>Kiwi</h1>
         <p class="card-text">£1</p>
+        <a class="nav-link" href="#basket">
         <button onclick="addKiwi()"> Add to Cart </button>
+      </a>
       </div>
     </div>
   </div>
@@ -85,7 +91,7 @@
 <!-- BASKET -->
 
 <div class="container">
-  <h1 class="fruit-header">Basket</h1>
+  <h1 class="fruit-header" id="basket">Basket</h1>
   </div>
 
   
