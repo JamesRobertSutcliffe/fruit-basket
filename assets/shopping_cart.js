@@ -17,11 +17,13 @@ let fruitPrice = {
 
 // Define number of fruit in each basket // 
 
+let appleQuant = 0;
+let applePrice = 0;
 function addApple(){
     let applePlus = fruit.Apple + 1;
     let applePricePlus = fruitPrice.Apple + 1.50;
     if (fruit.Apple >= 0){
-    fruit.Apple = applePlus;};
+    fruit.Apple = applePlus};
     if (fruitPrice.Apple >= 0){
         fruitPrice.Apple = applePricePlus};
     document.getElementById('displayApple').innerHTML = fruit.Apple;
@@ -98,14 +100,26 @@ function addBanana(){
 
 /// Creates total price
 
+let modalTotalValue = 0;
 function total(){
 const fruitArray = Object.values(fruitPrice);
     let total = 0;
 for (let x in fruitArray){
     total += fruitArray[x];
     document.getElementById('displayBasket').innerHTML = "£" + total.toFixed(2);
-}
-}
+    modalTotalValue = total.toFixed(2);
+ }};
+
+
+function modalTotal(){
+document.getElementById('displayBasket2').innerHTML = "£" + modalTotalValue;
+document.getElementById('modalAppleQuant').innerHTML = fruit.Apple;
+document.getElementById('modalApplePrice').innerHTML = "£" + fruitPrice.Apple;
+document.getElementById('modalBananaQuant').innerHTML = fruit.Banana;
+document.getElementById('modalBananaPrice').innerHTML = "£" + fruitPrice.Banana;
+document.getElementById('modalKiwiQuant').innerHTML = fruit.Kiwi;
+document.getElementById('modalKiwiPrice').innerHTML = "£" + fruitPrice.Kiwi;
+};
 
 // Clear functions
 
@@ -171,7 +185,7 @@ function toggleBanana() {
 
 
 
-        // fix this
+// EMPTY BASKET IMAGE TOGGLE
 
    function toggleEmpty(){
     const emptyBasket = document.getElementById('empty');

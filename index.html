@@ -212,8 +212,113 @@
 <div class="container rounded basket">
   <div class="row d-flex align-items-center">
        <div class="col-lg-12 col-md-12 col-sm-12 d-flex align-items-center justify-content-end payment">
-        <button type="button" class="btn btn-warning">Proceed to Payment</button>
+        <button onclick="modalTotal()" type="button" class="btn btn-warning" data-toggle="modal" data-target=".bd-example-modal-lg">Proceed to Payment</button>
     </div> 
+  </div>
+</div>
+
+<!-- modal -->
+
+<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+
+      <!-- modal apple  -->
+
+      <div class="container rounded bg-white basket" id="apple-basket">
+        <div class="row d-flex align-items-center">
+          <div class="col-lg-4 col-md-4 col-sm-12">
+            <img src="assets/images/apple.jpg" style="height: 80px;" alt="Apple">
+          </div>
+          <div class="col-lg-2 col-md-2 col-sm-12">
+            <h4>Apple</h4>
+          </div> 
+          
+          <div class="col-lg-2 col-md-2 col-sm-12">
+            <div class="row d-flex justify-content-center">
+            <!-- <button onclick="addApple()" type="button" class="btn btn-light btn-sm"> + </button> -->
+            <h4 id="modalAppleQuant"> 0 </h4>
+            <!-- <button onclick= "minusApple()" type="button" class="btn btn-light btn-sm"> - </button> -->
+          </div>
+          </div> 
+          <div class="col-lg-2 col-md-2 col-sm-12 d-flex justify-content-center">
+            <h4 id="modalApplePrice"> £0 </h4>
+          </div> 
+          <div class="col-lg-2 col-md-2 col-sm-12 d-flex justify-content-end">
+            <button type="button" class="btn btn-secondary" onclick= "clearApple()">x</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal Banana -->
+
+      <div class="container rounded bg-white basket" id="banana-basket">
+        <div class="row d-flex align-items-center">
+          <div class="col-lg-4 col-md-4 col-sm-12">
+            <img src="assets/images/banana.jpg" style="height: 80px;" alt="Apple">
+          </div>
+          <div class="col-lg-2 col-md-2 col-sm-12">
+            <h4>Banana</h4>
+          </div> 
+          
+          <div class="col-lg-2 col-md-2 col-sm-12">
+            <div class="row d-flex justify-content-center">
+            <!-- <button onclick="addBanana()" type="button" class="btn btn-light btn-sm"> + </button> -->
+            <h4 id="modalBananaQuant"> 0 </h4>
+            <!-- <button onclick= "minusBanana()" type="button" class="btn btn-light btn-sm"> - </button> -->
+          </div>
+          </div> 
+          <div class="col-lg-2 col-md-2 col-sm-12 d-flex justify-content-center">
+            <h4 id="modalBananaPrice"> £0 </h4>
+          </div> 
+          <div class="col-lg-2 col-md-2 col-sm-12 d-flex justify-content-end">
+            <button type="button" class="btn btn-secondary" onclick= "clearBanana()">x</button>
+          </div>
+        </div>
+      </div> 
+
+      <!-- modal kiwi -->
+
+      <div class="container rounded bg-white basket" id="kiwi-basket">
+        <div class="row d-flex align-items-center">
+          <div class="col-lg-4 col-md-4 col-sm-12">
+            <img src="assets/images/kiwi.png" style="height: 80px;" alt="Apple">
+          </div>
+          <div class="col-lg-2 col-md-2 col-sm-12">
+            <h4>Kiwi</h4>
+          </div> 
+          
+          <div class="col-lg-2 col-md-2 col-sm-12">
+            <div class="row d-flex justify-content-center">
+            <!-- <button onclick="addKiwi()" type="button" class="btn btn-light btn-sm"> + </button> -->
+            <h4 id="modalKiwiQuant"> 0 </h4>
+            <!-- <button onclick= "minusKiwi()" type="button" class="btn btn-light btn-sm"> - </button> -->
+          </div>
+          </div> 
+          <div class="col-lg-2 col-md-2 col-sm-12 d-flex justify-content-center">
+            <h4 id="modalKiwiPrice"> £0 </h4>
+          </div> 
+          <div class="col-lg-2 col-md-2 col-sm-12 d-flex justify-content-end">
+            <button type="button" class="btn btn-secondary" onclick= "clearKiwi()">x</button>
+          </div>
+        </div>
+      </div>
+      
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12">
+            <div class="d-flex align-items-center total-style">
+            <h4>Total</h4>
+            <div class="ml-auto d-flex align-items-center justify-content-end total-style">
+      <h4 id="displayBasket2"></h4>
+
+      
+    </div>
+      </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 
