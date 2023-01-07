@@ -114,11 +114,13 @@ for (let x in fruitArray){
 function modalTotal(){
 document.getElementById('displayBasket2').innerHTML = "£" + modalTotalValue;
 document.getElementById('modalAppleQuant').innerHTML = fruit.Apple;
-document.getElementById('modalApplePrice').innerHTML = "£" + fruitPrice.Apple;
+document.getElementById('modalApplePrice').innerHTML = "£" + fruitPrice.Apple.toFixed(2);
 document.getElementById('modalBananaQuant').innerHTML = fruit.Banana;
-document.getElementById('modalBananaPrice').innerHTML = "£" + fruitPrice.Banana;
+document.getElementById('modalBananaPrice').innerHTML = "£" + fruitPrice.Banana.toFixed(2);
 document.getElementById('modalKiwiQuant').innerHTML = fruit.Kiwi;
-document.getElementById('modalKiwiPrice').innerHTML = "£" + fruitPrice.Kiwi;
+document.getElementById('modalKiwiPrice').innerHTML = "£" + fruitPrice.Kiwi.toFixed(2);
+toggleModal()
+toggleModalEmpty()
 };
 
 // Clear functions
@@ -137,6 +139,7 @@ function clearApple(){
     document.getElementById('displayApple').innerHTML = fruit.Apple;
     total()
     toggle();
+    
 }
 
 function clearBanana(){
@@ -183,7 +186,34 @@ function toggleBanana() {
         kiwiBasket.classList.add('hide');
         }};
 
+// toggle modal basket visibility
 
+function toggleModal(){
+    const appleModal = document.getElementById('apple-modal');
+    const bananaModal = document.getElementById('banana-modal');
+    const kiwiModal = document.getElementById('kiwi-modal');
+    if (fruitPrice.Apple > 0) {
+        appleModal.classList.remove('hide');
+     } if (fruitPrice.Banana > 0) {
+            bananaModal.classList.remove('hide');
+      } if (fruitPrice.Kiwi > 0) {
+                kiwiModal.classList.remove('hide');
+    } if (fruitPrice.Apple == 0) {
+        appleModal.classList.add('hide');
+    } if (fruitPrice.Banana == 0) {
+        bananaModal.classList.add('hide');
+    } if (fruitPrice.Kiwi == 0) {
+        kiwiModal.classList.add('hide');
+    }};
+
+function toggleModalEmpty(){
+    const emptyModal = document.getElementById('empty-modal');
+    if (modalTotalValue > 0){
+        emptyModal.classList.add('hide')
+    } else {
+        emptyModal.classList.remove('hide') 
+    }
+};
 
 // EMPTY BASKET IMAGE TOGGLE
 
@@ -205,6 +235,9 @@ function toggle(){
     toggleBanana()
     toggleKiwi()
     toggleEmpty();
+    toggleModal();
+    toggleModalEmpty();
+    modalTotal();
 }
 
 

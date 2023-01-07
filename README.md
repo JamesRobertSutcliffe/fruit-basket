@@ -9,10 +9,10 @@ HTML / CSS
 
 within modal
 -------------
-- only display payment basket rows if basket is full - toggle unhide on click. Toggle hide on remove button
+
 - create 'register to puschase' then popout thanking user
 - add linnk to purchase in nav bar displaying same modal??
-
+- test all buttons!
 JS
  
 - push object values to initial object - use this to display values
