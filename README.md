@@ -6,8 +6,12 @@ HTML / CSS
 
 -Change fruit cards to image carousel? - add go to basket button below
 -resize images - all to the size of kiwi
--add modal linking to proceed to payment button / within modal add basket plus 'register to puschase' then popout thanking user
--add linnk to purchase in nav bar displaying same modal
+
+within modal
+-------------
+- only display payment basket rows if basket is full - toggle unhide on click. Toggle hide on remove button
+- create 'register to puschase' then popout thanking user
+- add linnk to purchase in nav bar displaying same modal??
 
 JS
  
