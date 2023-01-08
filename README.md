@@ -16,7 +16,7 @@ N/A.
 
 The deployed site has an intuitive design with a navigation bar and various buttons that allow the used to interact with product values and navigate to a shopping cart and sections associated with an e-commerce page. For full userbility please add products to the cart, clear the cart, clear individual items and click 'Proceed to Payment' and 'Submit' within modal to access all features.
 
-![Fruit Basket](assets/images/screenshot.png)
+![Fruit Basket](/assets/images/screenshot.png)
 
 
 ## Credits
@@ -43,5 +43,5 @@ please see license file in main branch of gitHub repository.
 
 ## Deployed Site
 
-https://jamesrobertsutcliffe.github.io/bootstrap-portfolio/
+https://jamesrobertsutcliffe.github.io/fruit-basket/
 
