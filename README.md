@@ -29,17 +29,17 @@ please see license file in main branch of gitHub repository.
 
 ## Features
 
-# Add Items to basket
-# 'Basket Empty' message and products visibilty toggled within basket
-# Change Quantity of Items within basket
-# Clear individual items from basket
-# Clear entire basket
-# Total price stored in JS object and displayed on page
-# Basket opens in Modal via 'Proceed to Payment' button
-# Form to sign in and pay (front-end only) within modal
-# Thank you message on final 'Submit' button in modal
-# Mobile Friendly
-# Implementation of JS objects, loops, arrays, conditional statements & functions tied into HTML and CSS using DOM and CSSDOM
+### Add Items to basket
+### 'Basket Empty' message and products visibilty toggled within basket
+### Change Quantity of Items within basket
+### Clear individual items from basket
+### Clear entire basket
+### Total price stored in JS object and displayed on page
+### Basket opens in Modal via 'Proceed to Payment' button
+### Form to sign in and pay (front-end only) within modal
+### Thank you message on final 'Submit' button in modal
+### Mobile Friendly
+### Implementation of JS objects, loops, arrays, conditional statements & functions tied into HTML and CSS using DOM and CSSDOM
 
 ## Deployed Site
 
