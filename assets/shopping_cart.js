@@ -50,7 +50,7 @@ function addBanana(){
     let bananaPricePlus = fruitPrice.Banana + 0.99;
     if (fruit.Banana >= 0){
     fruit.Banana = bananaPlus};
-    if (fruitPrice.Banana >= 0){
+    if (fruitPrice.Banana >= -1){
         fruitPrice.Banana = bananaPricePlus};
     document.getElementById('displayBanana').innerHTML = fruit.Banana;
     document.getElementById('displayBananaPrice').innerHTML = "£" + fruitPrice.Banana.toFixed(2);
@@ -200,7 +200,7 @@ function toggleModal(){
                 kiwiModal.classList.remove('hide');
     } if (fruitPrice.Apple == 0) {
         appleModal.classList.add('hide');
-    } if (fruitPrice.Banana == 0) {
+    } if (fruit.Banana == 0) {
         bananaModal.classList.add('hide');
     } if (fruitPrice.Kiwi == 0) {
         kiwiModal.classList.add('hide');
