@@ -31,11 +31,18 @@ min-height: 400px;
 margin-bottom: 15px;
 }
 
+.jumbo-margin {
+  margin-top: 50px;
+} 
 
 /* Fruit */
 
 .fruit {
   height: 50vh;
+  margin-top: 10px;
+}
+
+.about {
   margin-top: 10px;
 }
 
@@ -123,3 +130,9 @@ form {
   padding: 10px;
 }
 
+/* footer */
+
+.footer {
+  padding: 10px;
+  margin: 10px;
+}
