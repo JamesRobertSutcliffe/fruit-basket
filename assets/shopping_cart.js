@@ -240,9 +240,5 @@ function toggle(){
     modalTotal();
 }
 
-function thankYou(){
-    alert('Thank you for viewing and interacting with my Fruit Basket :)');
-} 
-
 
 

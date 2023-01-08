@@ -35,16 +35,27 @@ margin-bottom: 15px;
 /* Fruit */
 
 .fruit {
-  height: 55vh;
+  height: 50vh;
+  margin-top: 10px;
 }
+
+@media (max-width : 1280px){
+  .fruit {
+    height: 100% !important;
+  }}
 
 .basket-height {
-  height: 55vh;
+  height: 50vh;
 }
 
+@media (max-width : 1280px){
+  .basket-height {
+    height: 100% !important;
+  }}
+
 .fruit-header {
-  padding: 20px 20px 20px 0px;
-  margin: 20px 20px 20px 0px;
+  padding: 5px 20px 5px 0px;
+  margin: 5px 20px 5px 0px;
  }
 
 .container-flex {
@@ -55,15 +66,15 @@ margin-bottom: 15px;
 /* BASKET */
 
 #displayApple {
-  padding: 10px;
+  padding: 5px;
 }
 
 #displayBanana {
-  padding: 10px;
+  padding: 5px;
 }
 
 #displayKiwi {
-  padding: 10px;
+  padding: 5px;
 }
 
 .total-style{
@@ -84,7 +95,7 @@ margin-bottom: 15px;
 .basket {
   padding-top: 5px;
   padding-bottom: 5px;
-  margin-bottom: 10px;
+
 }
 
 .hide {
@@ -101,6 +112,7 @@ margin-bottom: 15px;
   padding-top: 5px;
   padding-bottom: 5px;
   margin-bottom: 10px;
+
 }
 
 .basket-title h4{

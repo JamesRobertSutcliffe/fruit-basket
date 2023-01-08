@@ -31,7 +31,8 @@
 <div class="jumbotron jumbotron-fluid">
     <div class="container">
       <h1 class="display-4">James' Fruit Basket</h1>
-      <p class="lead">A JS driven e-commerce fruit basket front-end project implemented via HTML, Bootstrap and css</p>
+      <p class="lead">A JS driven e-commerce fruit front-end project <br>
+      implemented via HTML, Bootstrap and css.</p>
     </div>
   </div>
 
@@ -40,7 +41,7 @@
   <div class="container fruit flex-column align-items-center">
 
   <div class="container">
-  <h1 class="fruit-header" id="fruit">Fruit</h1>
+  <h2 class="fruit-header" id="fruit">Fruit</h2>
   </div>
 
   <div class="container">
@@ -51,7 +52,7 @@
       <div class="card-body">
         <h1>Apple</h1>
         <p class="card-text">£1.50</p>
-        <a class="nav-link" href="#basket">
+        <a class="nav-link" href="#fruit">
         <button onclick="addApple()"> Add to Cart </button><br>
         </a>
       </div>
@@ -64,7 +65,7 @@
       <div class="card-body">
         <h1>Banana</h1>
         <p class="card-text">£0.99</p>
-        <a class="nav-link" href="#basket">
+        <a class="nav-link" href="#fruit">
         <button onclick="addBanana()"> Add to Cart </button>
       </a>
       </div>
@@ -77,7 +78,7 @@
       <div class="card-body">
         <h1>Kiwi</h1>
         <p class="card-text">£1</p>
-        <a class="nav-link" href="#basket">
+        <a class="nav-link" href="#fruit">
         <button onclick="addKiwi()"> Add to Cart </button>
       </a>
       </div>
@@ -92,7 +93,7 @@
 
 <div class="container basket-height">
 <div class="container">
-  <h1 class="fruit-header" id="basket">Basket</h1>
+  <h2 class="fruit-header" id="basket">Basket</h2>
   </div>
 
 <!-- APPLE -->
@@ -242,7 +243,7 @@
             <h4> Price </h4>
           </div> 
           <div class="col-lg-2 col-md-2 col-sm-12 d-flex justify-content-end">
-            
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>    
           </div>
         </div>
       </div>
@@ -262,7 +263,7 @@
       <div class="container rounded bg-light basket hide" id="apple-modal">
         <div class="row d-flex align-items-center">
           <div class="col-lg-4 col-md-4 col-sm-12">
-            <img src="assets/images/apple.jpg" style="height: 80px;" alt="Apple">
+            <img src="assets/images/apple.jpg" style="height: 50px;" alt="Apple">
           </div>
           <div class="col-lg-2 col-md-2 col-sm-12">
             <h4>Apple</h4>
@@ -287,7 +288,7 @@
       <div class="container rounded bg-light basket hide" id="banana-modal">
         <div class="row d-flex align-items-center">
           <div class="col-lg-4 col-md-4 col-sm-12">
-            <img src="assets/images/banana.jpg" style="height: 80px;" alt="Apple">
+            <img src="assets/images/banana.jpg" style="height: 50px;" alt="Apple">
           </div>
           <div class="col-lg-2 col-md-2 col-sm-12">
             <h4>Banana</h4>
@@ -312,7 +313,7 @@
       <div class="container rounded bg-light basket hide" id="kiwi-modal">
         <div class="row d-flex align-items-center">
           <div class="col-lg-4 col-md-4 col-sm-12">
-            <img src="assets/images/kiwi.png" style="height: 80px;" alt="Apple">
+            <img src="assets/images/kiwi.png" style="height: 50px;" alt="Apple">
           </div>
           <div class="col-lg-2 col-md-2 col-sm-12">
             <h4>Kiwi</h4>
@@ -364,9 +365,29 @@
       <input type="checkbox" class="form-check-input" id="exampleCheck1">
       <label class="form-check-label" for="exampleCheck1">Remember Me</label>
     </div>
-    <button type="button" class="btn btn-warning" onclick="thankYou()">Submit</button>
-  </form>      
+    <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#exampleModal">Submit</button>
+      </form>      
  
+<!-- Thank You Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Thank You!</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        I appreciate you taking the time to view and interact with my Fruit Basket. This is a front-end only project.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
+        </div>
+    </div>
+  </div>
+</div>
+  
     </div>
   </div>
 </div>
