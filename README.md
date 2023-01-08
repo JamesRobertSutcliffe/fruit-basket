@@ -16,7 +16,7 @@ N/A.
 
 The deployed site has an intuitive design with a navigation bar and various buttons that allow the used to interact with product values and navigate to a shopping cart and sections associated with an e-commerce page. For full userbility please add products to the cart, clear the cart, clear individual items and click 'Proceed to Payment' and 'Submit' within modal to access all features.
 
-![Fruit Basket](images/screenshot.png)
+![Fruit Basket](assets/images/screenshot.png)
 
 
 ## Credits
@@ -29,17 +29,17 @@ please see license file in main branch of gitHub repository.
 
 ## Features
 
-### Add Items to basket
-### 'Basket Empty' message and products visibilty toggled within basket
-### Change Quantity of Items within basket
-### Clear individual items from basket
-### Clear entire basket
-### Total price stored in JS object and displayed on page
-### Basket opens in Modal via 'Proceed to Payment' button
-### Form to sign in and pay (front-end only) within modal
-### Thank you message on final 'Submit' button in modal
-### Mobile Friendly
-### Implementation of JS objects, loops, arrays, conditional statements & functions tied into HTML and CSS using DOM and CSSDOM
+* Add Items to basket
+* 'Basket Empty' message and products visibilty toggled within basket
+* Change Quantity of Items within basket
+* Clear individual items from basket
+* Clear entire basket
+* Total price stored in JS object and displayed on page
+* Basket opens in Modal via 'Proceed to Payment' button
+* Form to sign in and pay (front-end only) within modal
+* Thank you message on final 'Submit' button in modal
+* Mobile Friendly
+* Implementation of JS objects, loops, arrays, conditional statements & functions tied into HTML and CSS using DOM and CSSDOM
 
 ## Deployed Site
 
