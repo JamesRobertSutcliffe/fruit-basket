@@ -6,7 +6,7 @@ The fruit basket is a JS driven mobile-friendly e-commerce front-end project imp
 
 My main motivation for creating the fruit basket was to have a project allowing me to combine all of my HTML, CSS, Bootstrap and vanilla Javascript skills. I wanted to build a project that would allow me to practice and develop all of these skills as well as showcase them in clear and simple environment, creating an e-commerce web application with js driven features allowed me to do whilst creating an application that mirrors a feaure that has a real world use case. 
 
-In building this project I developed and polished my front-end web skills, tying together HTML, CSS and javascript to create a functioning website, implementing functions for interactivity and objects to store date. 
+In building this project I developed and polished my front-end web skills, tying together HTML, CSS and javascript to create a functioning website, implementing functions for interactivity and objects to store data. 
 
 ## Installation
 
